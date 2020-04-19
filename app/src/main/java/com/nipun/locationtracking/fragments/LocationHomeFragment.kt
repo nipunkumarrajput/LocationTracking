@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.firebase.ui.auth.AuthUI
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
@@ -23,7 +24,8 @@ import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
-import com.nipun.locationtracking.*
+import com.nipun.locationtracking.LocationFetchService
+import com.nipun.locationtracking.LocationUtils
 import com.nipun.locationtracking.R
 import com.nipun.locationtracking.databinding.FragmentLocationHomeBinding
 import com.nipun.locationtracking.helper.GoogleMapHelper
@@ -64,13 +66,21 @@ class LocationHomeFragment : BaseFragment(), OnMapReadyCallback {
         super.onViewCreated(view, savedInstanceState)
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as? SupportMapFragment
         mapFragment?.getMapAsync(this)
-        if (!LocationUtils.isLocationEnabled(
-                requireContext()
-            )
-        ) {
+        if (!LocationUtils.isLocationEnabled(requireContext())) {
             enableGps()
         }
         startTrackerService()
+        binding.fabLogOut.setOnClickListener {
+            AuthUI.getInstance().signOut(requireContext()).addOnCompleteListener {
+                if (it.isSuccessful)
+                    findNavController().navigate(LocationHomeFragmentDirections.actionLocationHomeFragmentToLoginFragment())
+            }
+        }
+        binding.fabGps.setOnClickListener {
+            val location = myPositionMarker?.position
+            if (location != null)
+                animateCamera(location)
+        }
     }
 
     private fun enableGps() {

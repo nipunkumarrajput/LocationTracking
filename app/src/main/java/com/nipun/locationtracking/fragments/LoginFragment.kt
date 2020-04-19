@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.firebase.ui.auth.AuthUI
 import com.nipun.locationtracking.BuildConfig
-import com.nipun.locationtracking.LoginFragmentDirections
 import com.nipun.locationtracking.R
 import com.nipun.locationtracking.databinding.LoginFragmentBinding
 

@@ -35,6 +35,12 @@
             app:destination="@id/permissionsFragment"
             app:popUpTo="@id/locationHomeFragment"
             app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_locationHomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/locationHomeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
 </navigation>
