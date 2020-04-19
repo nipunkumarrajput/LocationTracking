@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "305421028081",
+    "firebase_url": "https://locationtracking-96dc7.firebaseio.com",
+    "project_id": "locationtracking-96dc7",
+    "storage_bucket": "locationtracking-96dc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305421028081:android:1e243780d245311cb4b750",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305421028081-hlqhq90jh0ik4t16ct3nph9t2km7id1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_8c7TIvLe9hkm0zGHVzpL8jJ0o6j6gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305421028081-hlqhq90jh0ik4t16ct3nph9t2km7id1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305421028081:android:69921bc343f07442b4b750",
+        "android_client_info": {
+          "package_name": "com.nipun.locationtracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305421028081-hlqhq90jh0ik4t16ct3nph9t2km7id1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_8c7TIvLe9hkm0zGHVzpL8jJ0o6j6gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305421028081-hlqhq90jh0ik4t16ct3nph9t2km7id1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

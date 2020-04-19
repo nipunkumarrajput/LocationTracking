@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c80f7</color>
+    <color name="colorPrimaryDark">#3d000000</color>
+    <color name="colorDark">#1058d1</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite60">#99FFFFFF</color>
+    <color name="colorWhite50">#80FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack25">#40000000</color>
+    <color name="colorBlackText">#333333</color>
+    <color name="colorBlackText80">#CC333333</color>
+    <color name="colorBlackText50">#80333333</color>
+    <color name="colorGray">#e4e4e4</color>
+    <color name="colorDead">#888888</color>
+    <color name="colorSuggestHint">#66d0021b</color>
+    <color name="colorSuggest">#d0021b</color>
+    <color name="colorSubTitle">#999999</color>
+
+    <color name="violetLineColor">#9400d3</color>
+    <color name="blueLineColor">#0099cc</color>
+    <color name="pinkLineColor">#ffcbdb</color>
+    <color name="redLineColor">#ff3333</color>
+    <color name="aquaLineColor">#00FFFF</color>
+    <color name="rapidLineColor">#000080</color>
+    <color name="greenLineColor">#339900</color>
+    <color name="magentaLineColor">#ff00ff</color>
+    <color name="airportLineColor">#f7943a</color>
+    <color name="yellowLineColor">#ffcc00</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="circleBorderColor">#73216dee</color>
+    <color name="circleInsideColor">#0c1058d1</color>
+    <color name="seekBarColor">#e6e6e6</color>
+</resources>

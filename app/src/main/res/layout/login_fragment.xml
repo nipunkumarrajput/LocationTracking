@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_photo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="124dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_location_tracking" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLogoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="23dp"
+            android:text="Location Tracker,"
+            android:textColor="@color/colorBlack"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLoveCar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="23dp"
+            android:text="Maps and Live position."
+            android:textColor="@color/colorDead"
+            android:textSize="32sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogoName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGetStarted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:text="Get started with"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoveCar" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/primary_gradient_bg"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/tvGetStarted"
+            app:layout_constraintRight_toRightOf="@+id/tvGetStarted"
+            app:layout_constraintTop_toBottomOf="@+id/tvGetStarted" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

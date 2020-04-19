@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nipun.locationtracking.fragments.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.nipun.locationtracking.fragments.PermissionsFragment"
+        android:label="Permissions">
+
+        <action
+            android:id="@+id/action_permissionsFragment_to_locationHomeFragment"
+            app:destination="@id/locationHomeFragment"
+            app:popUpTo="@id/permissionsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationHomeFragment"
+        android:name="com.nipun.locationtracking.fragments.LocationHomeFragment"
+        android:label="LocationHomeFragment">
+
+        <action
+            android:id="@+id/action_locationHomeFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment"
+            app:popUpTo="@id/locationHomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
